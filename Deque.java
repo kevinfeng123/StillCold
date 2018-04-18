@@ -13,18 +13,22 @@ public interface Deque<Card>{
 
     //~~~~~~~~~~~~~~~~~~~~~~~~begin AP subset~~~~~~~~~~~~~~~~~~~~~~~~//
     //Means of adding an element to collection:
-    //Inserts an element at front of queue
+    //Inserts an element at front of Deque
     public void addFirst( Card c );
 
-    //enqueue an element to end of deque
+    //Means of adding an element to collection:
+    //Inserts an element to end of Deque
     public void addLast( Card c);
 
-    //pop element from front of deque
+    //Means of removing an element to collection:
+    //Removes element from front of Deque
     public Card pollFirst();
 
-    //pop element
+    //Means of removing an element to collection:
+    //Removes element from end of Deque
     public Card pollLast();
 
+    //Means of viewin
     public Card peekFirst();
 
     //
