@@ -2,6 +2,7 @@
 Fiona Cai, Kevin Feng, Alexia Leong
 
 APCS2 pd1
+## L #02: All Hands on Deque! 
 
 ## To Do List:
 - [ ] Write informative comments for each chosen method in Deque interface
