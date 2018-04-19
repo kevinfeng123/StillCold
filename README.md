@@ -17,7 +17,7 @@ APCS2 pd1
      - ```boolean isEmpty(); ```
 
 - [X] Create a driver for testing QQKachoo
-- [ ] Update README.md with method selections and rationale for choosing said data structure
+- [X] Update README.md with method selections and rationale for choosing said data structure
 
 ## Development Plan:
 1. Select methods for our local Deque interface based on queue and deque Java API entries
