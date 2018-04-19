@@ -2,12 +2,12 @@
 Fiona Cai, Kevin Feng, Alexia Leong
 
 APCS2 pd1
-## L #02: All Hands on Deque! 
+## L #02: All Hands on Deque!
 
 ## To Do List:
-- [ ] Write informative comments for each chosen method in Deque interface
-- [ ] Choose a data structure for deque testing and implementation
-- [ ] Write deque implementation, methods in QQKachoo:
+- [X] Write informative comments for each chosen method in Deque interface
+- [X] Choose a data structure for deque testing and implementation
+- [X] Write deque implementation, methods in QQKachoo:
      - ```void addFirst( Card C ); ```
      - ```void addLast( Card C ); ```
      - ```Card pollFirst(); ```
@@ -16,7 +16,7 @@ APCS2 pd1
      - ```Card peekLast(); ```
      - ```boolean isEmpty(); ```
 
-- [ ] Create a driver for testing QQKachoo
+- [X] Create a driver for testing QQKachoo
 - [ ] Update README.md with method selections and rationale for choosing said data structure
 
 ## Development Plan:
