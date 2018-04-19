@@ -28,14 +28,16 @@ public interface Deque<Card>{
     //Removes element from end of Deque
     public Card pollLast();
 
-    //Means of viewin
+    //Means of retrieving but not removing first element of deque
+    //returns null if deque is empty
     public Card peekFirst();
 
-    //
+    //Means of retrieving but not removing last element of deque
+    //returns null if deque is empty
     public Card peekLast();
 
     //returns true if this deque is empty, otherwise returns false
     public boolean isEmpty();
-
+    
     //~~~~~~~~~~~~~~~~~~~~~~~end AP subset~~~~~~~~~~~~~~~~~~~~~~~~~~//
 }//end interface Deque
