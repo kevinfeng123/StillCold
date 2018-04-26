@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class QQKachoo<Card> implements Deque<Card>{
 
     DLLNode<Card> _front;
@@ -8,8 +6,8 @@ public class QQKachoo<Card> implements Deque<Card>{
 
     public QQKachoo(){
         _front = null;
-	_end = null;
-	size = 0;
+	      _end = null;
+	      size = 0;
     }
 
     //Means of adding an element to collection:
