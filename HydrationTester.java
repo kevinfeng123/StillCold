@@ -41,34 +41,34 @@ public class HydrationTester{
     System.out.println("");
 
     System.out.println("-----Removing from front-----");
-    System.out.println(liquids.removeFirst()); //OJ dies
+    System.out.println(liquids.pollFirst()); //OJ dies
     System.out.println(liquids.peekFirst()); //Milk
 
     System.out.println("");
 
     System.out.println("-----Removing from end-----");
-    System.out.println(liquids.removeLast()); //Rain dies
+    System.out.println(liquids.pollLast()); //Rain dies
     System.out.println(liquids.peekLast()); //Coffee
 
     System.out.println("");
-
+/**
     System.out.println("------Current Deque------");
     System.out.println(liquids); //OJ Milk Juice HotChocolate Water Coffee Rain
     System.out.println("Now backwards... \n" + liquids.backString());
 
     System.out.println("");
-
+**/
     System.out.println("------REMOVING EVERYTHING------");
     System.out.println(liquids);
-    liquids.removeFirst();
+    liquids.pollFirst();
     System.out.println(liquids);
-    liquids.removeLast();
+    liquids.pollLast();
     System.out.println(liquids);
-    liquids.removeFirst();
+    liquids.pollFirst();
     System.out.println(liquids);
-    liquids.removeLast();
+    liquids.pollLast();
     System.out.println(liquids);
-    liquids.removeFirst();
+    liquids.pollFirst();
     System.out.println(liquids);
 
     System.out.println("Is it empty yet? "+ liquids.isEmpty()); //true
@@ -76,7 +76,7 @@ public class HydrationTester{
     System.out.println("Trying to alter empty deque...");
     System.out.println("Trying to peekFirst: " + liquids.peekFirst());
     System.out.println("Trying to peekLast: " + liquids.peekLast());
-    System.out.println("Trying to removeFirst: "+ liquids.removeFirst());
-    System.out.println("Trying to removeLast: " + liquids.removeLast());
+    System.out.println("Trying to pollFirst: "+ liquids.pollFirst());
+    System.out.println("Trying to pollLast: " + liquids.pollLast());
   }
 }
