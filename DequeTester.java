@@ -25,7 +25,6 @@ public class DequeTester{
     	System.out.println("\ntest iterator");
     	for(String x:test1)
     		System.out.println(x);
-
         System.out.println("\ntest diterator");
         Iterator<String> it = test1.diterator();
         while(it.hasNext())
@@ -46,24 +45,20 @@ public class DequeTester{
 	for (int i = 0; i<10; i++){
 	    itestf.enqueueFront(i+"");
 	    iteste.enqueueFront(i+"");
-	    
-	}
 
+	}
 	Iterator<String> f = itestf.iterator();
 	Iterator<String>e=iteste.diterator();
 
-	
 	System.out.println(itestf);
-
 	while (f.hasNext()){
 	    System.out.print(f.next()+ " ");
 	    f.remove();
 	}
 	System.out.println(itestf);
 	System.out.println(iteste);
-
 	while (e.hasNext()){
-	    
+
 	    System.out.print(e.next()+ " ");
 	    e.remove();
 	}
