@@ -38,12 +38,12 @@ public class DequeDriver{
 
     System.out.println("");
 
-    System.out.println("------Current Deque------");
+    System.out.println("------Current Deque------  End ---> Front");
     System.out.println(iscream); //Mint Strawberry Vanilla Chocolate
 
     System.out.println("");
 
-    System.out.println("-----Adding to end------");
+    System.out.println("-----Adding to end------   End ---> Front");
     iscream.addLast("Pistachio");
     System.out.println(iscream.peekLast()); //Pistachio
     iscream.addLast("Coffee");
@@ -61,6 +61,8 @@ public class DequeDriver{
     System.out.println("-----Removing from front-----");
     iscream.pollFirst(); //Mint  dies
     System.out.println(iscream.peekFirst()); //Strawberry
+	System.out.println("------Current Deque------");
+    System.out.println(iscream); // Strawberry Vanilla Chocolate Pistachio Coffee S'mores
 
     System.out.println("");
 
@@ -71,8 +73,7 @@ public class DequeDriver{
     System.out.println("");
 
     System.out.println("------Current Deque------");
-    System.out.println(iscream); //Mint Strawberry Vanilla Chocolate Pistachio Coffee S'mores
-
+    System.out.println(iscream); // Strawberry Vanilla Chocolate Pistachio Coffee
     System.out.println("");
 
     System.out.println("------REMOVING EVERYTHING------");
