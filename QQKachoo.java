@@ -6,13 +6,14 @@ public class QQKachoo<Card> implements Deque<Card>{
 
     public QQKachoo(){
         _front = null;
-	      _end = null;
-	      size = 0;
+	    _end = null;
+	    size = 0;
     }
 
     //Means of adding an element to collection:
     //Inserts an element at front of Deque
     public void addFirst( Card c ){
+	  if (c == null) throw new NullPointerException(); //throw NPE
       if(isEmpty()){
         DLLNode<Card> tmpfront = new DLLNode<Card>(c, null, null);
         _front = _end = tmpfront;
@@ -29,6 +30,7 @@ public class QQKachoo<Card> implements Deque<Card>{
    //Means of adding an element to collection:
     //Inserts an element to end of Deque
     public void addLast( Card c){
+	  if (c == null) throw new NullPointerException(); //throw NPE
       if(isEmpty()){
         DLLNode<Card> tmpfront = new DLLNode<Card>(c, null, null);
         _front = _end = tmpfront;
@@ -46,21 +48,22 @@ public class QQKachoo<Card> implements Deque<Card>{
      //Means of removing an element to collection:
     //Removes element from front of Deque
     public Card pollFirst(){
-	if(isEmpty()){
-	    return null;
-	}
+		if(isEmpty()){
+			return null;
+		}
 
-	Card retVal = _front.getCargo();
-	_front = _front.getNext();
-  if(_front == null){
-      _end = null;
-  }
-  else{
-      _front.setPrev(null);
-  }
-	size--;
-	return retVal;
-    }
+		Card retVal = _front.getCargo();
+		_front = _front.getNext();
+		
+		if(_front == null){
+		  _end = null;
+		}
+		else{
+		_front.setPrev(null);
+		}
+		size--;
+		return retVal;
+		}
 
 
     //Means of removing an element to collection:
@@ -69,39 +72,38 @@ public class QQKachoo<Card> implements Deque<Card>{
        	if(isEmpty()){
 	    return null;
 	}
-	if(_front == null){
-	    _end = null;
+		if(_front == null){
+			_end = null;
+		}
+		Card retVal = _end.getCargo();
+		_end = _end.getPrev();
+		_end.setNext(null);
+		size--;
+		return retVal;
 	}
-	Card retVal = _end.getCargo();
-	_end = _end.getPrev();
-	_end.setNext(null);
-	size--;
-	return retVal;
-
-    }
 
 
     //Means of retrieving but not removing first element of deque
     //returns null if deque is empty
     public Card peekFirst(){
-	if(isEmpty()){
-	    return null;
-	}
-	return _front.getCargo();
-    }
+		if(isEmpty()){
+			return null;
+		}
+		return _front.getCargo();
+		}
 
     //Means of retrieving but not removing last element of deque
     //returns null if deque is empty
     public Card peekLast(){
-	if(isEmpty()){
-	    return null;
-	}
-	return _end.getCargo();
-    }
+		if(isEmpty()){
+			return null;
+		}
+		return _end.getCargo();
+		}
 
     //returns true if this deque is empty, otherwise returns false
     public boolean isEmpty(){
-	return size == 0;
+		return size == 0;
     }
 
     //toString method
