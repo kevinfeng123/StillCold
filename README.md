@@ -47,4 +47,7 @@ APCS2 pd1
 ## Why Doubly Linked Nodes?
 
    Initially, we chose to use an ArrayList as our container for our deque because we thought the implementation for an ArrayList over a linked list would be easier and there was a way to access both ends of the array that was simpler than a linked list. So after thinking about it more, we changed from an ArrayList container to having Doubly Linked Nodes so that the methods we chose to implement would run in constant (O(1)) time rather than having addFirst(Card C) run in linear (O(n)) time if we used an ArrayList.
+   
+## Changes We Made
+1. Deleted import java.util.ArrayList, we forgot to delete this after we switched from choosing an ArrayList to Doubly Linked Nodes
 
